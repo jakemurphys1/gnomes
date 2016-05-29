@@ -1,0 +1,115 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header{
+    background-color: rgb(33, 33, 33);
+    background-image: url("../images/magicpic7.jpg");
+    background-position: bottom;
+    height:300px;
+
+    h1{
+      text-align: center;
+          color:white;
+          margin-top: 150px;
+          font-size: 40px;
+    }
+}
+
+.footer{
+  margin-top:50px;
+    margin-bottom:50px;
+    height:300px;
+  background-color: rgb(33, 33, 33);
+  p,h3{
+    color:white;
+  }
+  .bottom{
+    margin-top: 80px;
+  }
+
+}
+
+.body{
+  margin-top: 30px;
+  .upcoming{
+    h1{
+      text-align: center;
+    }
+  }
+  img{
+    width:300px;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  h2{
+    color:white;
+    text-align: center;
+  }
+  .mainpagerow{
+    margin-top: 100px;
+    .mainpage{
+      margin-top: 10px;
+      height:380px;
+      .imageContainer{
+        max-width: 300px;
+        margin: auto;
+      }
+      img{
+        margin: auto;
+        height:300px;
+      }
+      border: black solid 2px;
+      border-radius: 5px;
+        background-color: rgb(33, 33, 33);
+    }
+  }
+
+}
+
+#text-carousel{
+height:150px;
+margin-top: 10px;
+margin-bottom: 10px;
+div:hover{
+    cursor: pointer;
+}
+}
+
+.events{
+  height: 150px;
+  text-align: center;
+  .Inner{
+      height: 150px;
+  }
+  .left{
+      height: 150px;
+  }
+  .right{
+      height: 150px;
+  }
+}
+
+.schedule{
+  h1{
+    text-align: center;
+  }
+}
+.Time{
+  margin-top: -10px;
+}
