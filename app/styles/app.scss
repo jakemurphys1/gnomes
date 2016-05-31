@@ -21,25 +21,46 @@ img {
     background-image: url("../images/magicpic7.jpg");
     background-position: bottom;
     height:300px;
-
+.headerschedule{
+  text-align: right;
+  color:white;
+  a{
+    text-decoration: none !important;
+    color: white;
+    font-size: 20px;
+  }
+  span{
+    margin-right:60px;
+  }
+}
     h1{
       text-align: center;
           color:white;
-          margin-top: 150px;
+          margin-top: 100px;
           font-size: 40px;
     }
 }
 
 .footer{
   margin-top:50px;
-    margin-bottom:50px;
-    height:300px;
+    margin-bottom:30px;
+    min-height:300px;
   background-color: rgb(33, 33, 33);
   p,h3{
     color:white;
   }
+  h3{
+    text-align: center;
+  }
+  .info{
+
+  }
   .bottom{
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-left: 30px;
+    h3{
+      margin-bottom:30px;
+    }
   }
 
 }
@@ -61,8 +82,9 @@ img {
     color:white;
     text-align: center;
   }
+
   .mainpagerow{
-    margin-top: 100px;
+    margin-top: 150px;
     .mainpage{
       margin-top: 10px;
       height:380px;
@@ -72,12 +94,18 @@ img {
       }
       img{
         margin: auto;
-        height:300px;
+        border: black solid 5px;
+        border-radius: 5px;
       }
-      border: black solid 2px;
+      p{
+        font: 400 30px/1.2 'Merienda One', Helvetica, sans-serif;
+  color: rgb(33, 33, 33);
+      }
       border-radius: 5px;
-        background-color: rgb(33, 33, 33);
     }
+  }
+  .mainbottom{
+      margin-top: 30px;
   }
 
 }
@@ -92,16 +120,25 @@ div:hover{
 }
 
 .events{
-  height: 150px;
+  height: 300px;
   text-align: center;
+  background-color: rgb(33, 33, 33);
+  h1,p,h3{
+    color:white;
+  }
+  .fullSchedule{
+    color:rgb(65, 93, 148);
+  }
   .Inner{
       height: 150px;
   }
   .left{
       height: 150px;
+      color:white;
   }
   .right{
       height: 150px;
+        color:white;
   }
 }
 
@@ -112,4 +149,43 @@ div:hover{
 }
 .Time{
   margin-top: -10px;
+}
+
+.details{
+  h1,h2{
+    text-align: center;
+    color:black;
+  }
+}
+
+.maindetails{
+  a{
+    text-decoration: none !important;
+    color: black;
+  }
+}
+
+.carousel{
+    a{
+      text-decoration: none !important;
+      color: black;
+    }
+}
+
+.tribute{
+  margin-top: 40px;
+  p{
+    color:black;
+  }
+  background-color:white;
+  text-align: center;
+}
+
+.contactUs{
+  h1{
+    text-align: center;
+  }
+  p{
+    font-size: 20px;
+  }
 }

@@ -149,11 +149,11 @@ var loopcount=0;
 
           sixEvents.push(
             <div  key = {"event" + eventcount} className={"item " + activeWord}>
-                <div key={"event" + eventcount}  className="carousel-content">
-                  <h3>{thisevent.get("Name")}</h3>
+                <div key={"event" + eventcount}  className="carousel-content maindetails">
+                  <a href = {"#details/" + thisevent.id}><h3>{thisevent.get("Name")}</h3>
                     <p>{thisevent.get("Format")}</p>
                         <p>{redate}</p>
-                              <p>{time}</p>
+                              <p>{time}</p></a>
                 </div>
             </div>
           )
@@ -183,28 +183,38 @@ var loopcount=0;
             <a className="right carousel-control" href="#text-carousel" data-slide="next">
               <span className="glyphicon glyphicon-chevron-right"></span>
             </a>
+
+              <a href="#schedule"><h1 className="fullSchedule">View full Schedule</h1></a>
+
           </div>
         </div>
     </div>
 
 
       <div className="row mainpagerow">
-        <a href="#schedule"><div className="col-md-3 col-md-offset-1 col-sm-6 col-xs-12 mainpage">
+        <div className="col-sm-4 col-sm-offset-1 col-xs-12 mainpage">
           <div className = "imageContainer"><img className="mainImage" src = "images/Magicpic6.jpg"/></div>
-            <h2>Schedule</h2>
-        </div></a>
-
-      <div className="col-md-3 col-md-offset-1 col-sm-6 col-xs-12 mainpage">
-          <div className = "imageContainer"><img className="mainImage" src = "images/Magicpics5.jpg"/></div>
-            <h2>Cards</h2>
         </div>
 
-      <div className="col-md-3 col-md-offset-1 col-sm-6 col-xs-12 mainpage">
-        <div className = "imageContainer"><img className="mainImage" src = "images/Magicpic2.jpg"/></div>
-          <h2>Specials</h2>
+      <div className="col-sm-6 col-xs-12 mainpage">
+              <p>I have always enjoyed going to Gnome's. Every staff member that I've talked to has been incredibly friendly. As a casual player, I find it refreshing that they would give me the same level of attention as the hard-core guys. Thanks guys! -Alex Jones</p>
       </div>
 
     </div>
+
+    <div className="row mainpagerow mainbottom">
+
+
+    <div className="col-sm-6 col-xs-12 col-sm-offset-1 mainpage">
+            <p>Great place for Magic the Gathering players to go! Out of all the LCS that I've been to, definitely the best one. A++ to the owner and everyone that I've met there. -Robert Faulks</p>
+            <p>Definitely a solid choice if you are in the Greenville area -Blain Willimon</p>
+    </div>
+
+    <div className="col-sm-4  col-xs-12 mainpage">
+      <div className = "imageContainer"><img className="mainImage" src = "images/Magicpics5.jpg"/></div>
+    </div>
+
+  </div>
 
     </div>
     )

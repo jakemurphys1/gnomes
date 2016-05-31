@@ -103,12 +103,15 @@ if(thisevent.length>0){
  }
 }
 
- var time = <p>{starthr + ":" + startmin + " " + startampm + " To " + endhr + ":" + endmin + " " + endampm}</p>
- console.log("here88")
+ var time = <p>{starthr + ":" + startmin + " " + startampm + " to " + endhr + ":" + endmin + " " + endampm}</p>
      theEvents.push(<div key = {"event"}>
            <div key={"event"}  className="carousel-content">
-             <div className="row">
-               <div className="col-xs-3"><p>{thisevent[0].get("Name")}</p></div>
+             <div className="row details">
+                 <h1>{thisevent[0].get("Name")}</h1>
+                    <h2>{thisevent[0].get("Format")}</h2>
+                 <h2>{redate}</h2>
+                 <h2>{time}</h2>
+               <p>{thisevent[0].get("Description")}</p>
              </div>
 
            </div>

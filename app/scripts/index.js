@@ -11,14 +11,21 @@ var homeContainer= document.getElementById("body")
 var HomeForm =require("./components/home.jsx")
 var ScheduleForm =require("./components/schedule.jsx")
 var DetailForm =require("./components/detail.jsx")
+var FooterForm =require("./components/footer.jsx")
+var ContactForm =require("./components/contact.jsx")
+
 Parse.initialize("GLID");
 Parse.serverURL = 'http://gaminglocal.herokuapp.com';
+
+
+    ReactDOM.render(<FooterForm router={this}/>,document.getElementById("footer"))
 
 var Router = Backbone.Router.extend({
   routes:{
     "":"home",
     "schedule":"schedule",
     "details/:name":"details",
+    "contact":"contact",
   },
   home:function(){
     ReactDOM.unmountComponentAtNode(homeContainer);
@@ -32,6 +39,10 @@ var Router = Backbone.Router.extend({
     console.log("id",id)
     ReactDOM.unmountComponentAtNode(homeContainer);
     ReactDOM.render(<DetailForm curId={id} router={this}/>,homeContainer)
+  },
+  contact:function(){
+    ReactDOM.unmountComponentAtNode(homeContainer);
+    ReactDOM.render(<ContactForm router={this}/>,homeContainer)
   },
 })
 
