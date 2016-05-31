@@ -503,8 +503,6 @@ var loopcount=0;
         )
     ), 
 
-"//change", 
-
       React.createElement("div", {className: "row mainpagerow"}, 
         React.createElement("div", {className: "col-sm-4 col-sm-offset-1 col-xs-12 mainpage"}, 
           React.createElement("div", {className: "imageContainer"}, React.createElement("img", {className: "mainImage", src: "images/magicpic6.jpg"}))
