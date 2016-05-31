@@ -190,10 +190,10 @@ var loopcount=0;
         </div>
     </div>
 
-
+//change
       <div className="row mainpagerow">
         <div className="col-sm-4 col-sm-offset-1 col-xs-12 mainpage">
-          <div className = "imageContainer"><img className="mainImage" src = "images/Magicpic6.jpg"/></div>
+          <div className = "imageContainer"><img className="mainImage" src = "images/magicpic6.jpg"/></div>
         </div>
 
       <div className="col-sm-6 col-xs-12 mainpage">
@@ -211,7 +211,7 @@ var loopcount=0;
     </div>
 
     <div className="col-sm-4  col-xs-12 mainpage">
-      <div className = "imageContainer"><img className="mainImage" src = "images/Magicpics5.jpg"/></div>
+      <div className = "imageContainer"><img className="mainImage" src = "images/magicpics5.jpg"/></div>
     </div>
 
   </div>
