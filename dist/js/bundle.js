@@ -503,10 +503,11 @@ var loopcount=0;
         )
     ), 
 
+"//change", 
 
       React.createElement("div", {className: "row mainpagerow"}, 
         React.createElement("div", {className: "col-sm-4 col-sm-offset-1 col-xs-12 mainpage"}, 
-          React.createElement("div", {className: "imageContainer"}, React.createElement("img", {className: "mainImage", src: "images/Magicpic6.jpg"}))
+          React.createElement("div", {className: "imageContainer"}, React.createElement("img", {className: "mainImage", src: "images/magicpic6.jpg"}))
         ), 
 
       React.createElement("div", {className: "col-sm-6 col-xs-12 mainpage"}, 
@@ -524,7 +525,7 @@ var loopcount=0;
     ), 
 
     React.createElement("div", {className: "col-sm-4  col-xs-12 mainpage"}, 
-      React.createElement("div", {className: "imageContainer"}, React.createElement("img", {className: "mainImage", src: "images/Magicpics5.jpg"}))
+      React.createElement("div", {className: "imageContainer"}, React.createElement("img", {className: "mainImage", src: "images/magicpics5.jpg"}))
     )
 
   )

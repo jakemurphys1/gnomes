@@ -191,6 +191,7 @@ var loopcount=0;
     </div>
 
 //change
+
       <div className="row mainpagerow">
         <div className="col-sm-4 col-sm-offset-1 col-xs-12 mainpage">
           <div className = "imageContainer"><img className="mainImage" src = "images/magicpic6.jpg"/></div>
