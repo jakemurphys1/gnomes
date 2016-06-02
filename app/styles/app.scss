@@ -42,7 +42,7 @@ img {
 }
 
 .footer{
-  margin-top:50px;
+  margin-top:70px;
     margin-bottom:30px;
     min-height:300px;
   background-color: rgb(33, 33, 33);
@@ -87,6 +87,7 @@ img {
     margin-top: 150px;
     .mainpage{
       margin-top: 10px;
+
       height:380px;
       .imageContainer{
         max-width: 300px;
@@ -99,7 +100,10 @@ img {
       }
       p{
         font: 400 30px/1.2 'Merienda One', Helvetica, sans-serif;
-  color: rgb(33, 33, 33);
+        color: rgb(33, 33, 33);
+        @media screen and (max-width: 375px){
+        font-size: 20px;
+        };
       }
       border-radius: 5px;
     }
@@ -188,4 +192,19 @@ div:hover{
   p{
     font-size: 20px;
   }
+}
+
+.special1{
+  .specialCol{
+
+    h1{
+      text-align: center;
+
+    }
+    p{
+      font-size: 30px;
+
+    }
+  }
+  margin-bottom:20px;
 }

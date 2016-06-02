@@ -10,6 +10,7 @@ var Home = React.createClass({
       return {
         "events":[],
           "stores":[],
+          "specials":[],
       }
     },
     componentDidMount(){
@@ -20,6 +21,15 @@ var Home = React.createClass({
         self.setState({"stores":theCards});
       }
     })
+
+    var Special = Parse.Object.extend("Specials");
+var specialQuery = new Parse.Query(Special);
+  specialQuery.equalTo("storeName", "JakeGaming");
+  specialQuery.find({
+    success: function(theCards){
+      self.setState({"specials":theCards});
+    }
+  })
 
   //find events info from parse
   var self=this;
@@ -161,8 +171,38 @@ var loopcount=0;
       })
     }
 
+    var specials = this.state.specials;
+    var special1;
+      var special2;
+        var special3;
+        var specialname1;
+          var specialname2;
+            var specialname3;
+
+    if(specials.length>0){
+        console.log("Specials",specials[0].get("specialDescription1"))
+        special1=specials[0].get("specialDescription1");
+          special2=specials[0].get("specialDescription2");
+            special3=specials[0].get("specialDescription3");
+            specialname1=specials[0].get("specialName1");
+              specialname2=specials[0].get("specialName2");
+                specialname3=specials[0].get("specialName3");
+
+    }
+
+
     return(
     <div className="Total">
+
+  <div className = "row special1">
+
+    <div className="col-xs-10 col-xs-offset-1 specialCol">
+      <h1>{specialname1}</h1>
+        <p>{special1}</p>
+    </div>
+
+  </div>
+
 
       <div className = "row">
         <div className="col-md-10 col-md-offset-1 events">
@@ -188,6 +228,19 @@ var loopcount=0;
 
           </div>
         </div>
+    </div>
+
+    <div className = "row special2">
+
+      <div className="col-sm-5 col-sm-offset-1 col-xs-12 specialCol">
+        <h1>{specialname2}</h1>
+          <p>{special2}</p>
+      </div>
+      <div className="col-sm-5 col-xs-12 specialCol">
+        <h1>{specialname3}</h1>
+          <p>{special3}</p>
+      </div>
+
     </div>
 
       <div className="row mainpagerow">

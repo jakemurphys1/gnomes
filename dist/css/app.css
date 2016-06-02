@@ -5838,7 +5838,7 @@ img {
     font-size: 40px; }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 30px;
   min-height: 300px;
   background-color: #212121; }
@@ -5880,6 +5880,9 @@ img {
       .body .mainpagerow .mainpage p {
         font: 400 30px/1.2 'Merienda One', Helvetica, sans-serif;
         color: #212121; }
+        @media screen and (max-width: 375px) {
+          .body .mainpagerow .mainpage p {
+            font-size: 20px; } }
   .body .mainbottom {
     margin-top: 30px; }
 
@@ -5936,5 +5939,12 @@ img {
   text-align: center; }
 .contactUs p {
   font-size: 20px; }
+
+.special1 {
+  margin-bottom: 20px; }
+  .special1 .specialCol h1 {
+    text-align: center; }
+  .special1 .specialCol p {
+    font-size: 30px; }
 
 /*# sourceMappingURL=app.css.map */

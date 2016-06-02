@@ -323,6 +323,7 @@ var Home = React.createClass({displayName: "Home",
       return {
         "events":[],
           "stores":[],
+          "specials":[],
       }
     },
     componentDidMount(){
@@ -333,6 +334,15 @@ var Home = React.createClass({displayName: "Home",
         self.setState({"stores":theCards});
       }
     })
+
+    var Special = Parse.Object.extend("Specials");
+var specialQuery = new Parse.Query(Special);
+  specialQuery.equalTo("storeName", "JakeGaming");
+  specialQuery.find({
+    success: function(theCards){
+      self.setState({"specials":theCards});
+    }
+  })
 
   //find events info from parse
   var self=this;
@@ -474,8 +484,38 @@ var loopcount=0;
       })
     }
 
+    var specials = this.state.specials;
+    var special1;
+      var special2;
+        var special3;
+        var specialname1;
+          var specialname2;
+            var specialname3;
+
+    if(specials.length>0){
+        console.log("Specials",specials[0].get("specialDescription1"))
+        special1=specials[0].get("specialDescription1");
+          special2=specials[0].get("specialDescription2");
+            special3=specials[0].get("specialDescription3");
+            specialname1=specials[0].get("specialName1");
+              specialname2=specials[0].get("specialName2");
+                specialname3=specials[0].get("specialName3");
+
+    }
+
+
     return(
     React.createElement("div", {className: "Total"}, 
+
+  React.createElement("div", {className: "row special1"}, 
+
+    React.createElement("div", {className: "col-xs-10 col-xs-offset-1 specialCol"}, 
+      React.createElement("h1", null, specialname1), 
+        React.createElement("p", null, special1)
+    )
+
+  ), 
+
 
       React.createElement("div", {className: "row"}, 
         React.createElement("div", {className: "col-md-10 col-md-offset-1 events"}, 
@@ -501,6 +541,19 @@ var loopcount=0;
 
           )
         )
+    ), 
+
+    React.createElement("div", {className: "row special2"}, 
+
+      React.createElement("div", {className: "col-sm-5 col-sm-offset-1 col-xs-12 specialCol"}, 
+        React.createElement("h1", null, specialname2), 
+          React.createElement("p", null, special2)
+      ), 
+      React.createElement("div", {className: "col-sm-5 col-xs-12 specialCol"}, 
+        React.createElement("h1", null, specialname3), 
+          React.createElement("p", null, special3)
+      )
+
     ), 
 
       React.createElement("div", {className: "row mainpagerow"}, 
